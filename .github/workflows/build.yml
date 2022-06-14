@@ -46,7 +46,7 @@ jobs:
           password: ${{ secrets.REGISTRY_TOKEN }}
       -
         name: Get latest code
-        run: git clone https://github.com/jedisct1/dnscrypt-server-docker.git && mv dnscrypt-server-docker/* .
+        run: git clone https://github.com/DNSCrypt/dnscrypt-server-docker.git && mv dnscrypt-server-docker/* .
       -
         name: Build and push
         uses: docker/build-push-action@v2
