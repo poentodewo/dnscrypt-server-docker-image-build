@@ -52,7 +52,7 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-          platforms: linux/arm64,linux/amd64
+          platforms: linux/amd64
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
             ghcr.io/poentodewo/dnscrypt-server-docker
